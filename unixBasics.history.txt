@@ -1,0 +1,164 @@
+ Unix Problem Set 1 Hx
+    1  pwd
+    2  cd/bin/
+    3  ls
+    4  ls - l
+    5  ls -l
+    6  ls -lt
+    7  date
+    8  sleep 2
+    9  date ; sleep2 ; date
+   10  date ; sleep 2 ; date
+   11  cd ~
+
+   28  man mkdir more
+   29  mkdir problemsets
+ 
+   36  wget https://raw.githubusercontent.com/prog4biol/pfb2018/master/files/sequences.nt.fa
+ 
+   38  wc sequences.nt.fa 
+   39  wc -c sequences.nt.fa 
+   40  head sequences.nt.fa 
+   41  man head
+   
+   43  head -n 1 sequences.nt.fa 
+   44  tail -n 1 sequences.nt.fa 
+   
+   46  man grep more
+   47  grep '>' sequences.nt.fa 
+   
+   49  man mv
+   50  mv sequences.nt.fa cancer_genes.fasta
+   
+   53  mv sequences.nt.fa /Network/Servers/miniserve.cshl.edu/Volumes/KRAKEN/PFB2018/sfr/problemsets/cancer_genes.fasta
+  
+   56  wget https://raw.githubusercontent.com/prog4biol/pfb2018/master/files/cuffdiff.txt
+  
+   58  head cuffdiff.txt 
+   59  head -n 3 cuffdiff.txt 
+   60  man sort more
+   
+   90  sort -k10,10g cuffdiff.txt > sorted.cuffdiff.txt
+   91  head sorted.cuffdiff.txt 
+   92  head -n 100 sorted.cuffdiff.txt > top100.sorted.cuffdiff.txt
+   
+   94  head top100.sorted.cuffdiff.txt 
+   95  man cut
+   
+
+
+
+Unix Problem Set #2
+   96  echo "# CHSL_PFB_2018" >> README.md
+   97  git init
+   98  git add README.md
+   99  git commit -m "first commit"
+  100  git remote add origin https://github.com/scottfriedland/CHSL_PFB_2018.git
+  101  git push -u origin master
+  102  git push -u origin master
+  103  git push -u origin master
+ 
+  107  echo "# CHSL_PFB_2018" >> README.md
+  108  git init
+  109  git add README.md
+  110  git commit -m "first commit"
+  111  git remote add origin https://github.com/scottfriedland/CHSL_PFB_2018.git
+  112  git push -u origin master
+  113  git clone https://github.com/prog4biol/pfb2018.git
+  114  ls
+  115  ls -aF
+  116  git add problemsets/
+  117  git comit -m 'adding problemsets folder to git'
+  118  git commit -m 'adding problemsets folder to git'
+  119  git push
+  120  git push -u origin master
+ 
+  126  git add sfr/
+  127  cd sfr
+  128  git add sfr/
+  129  git add pfb2018/
+  
+  131  git commit -m 'pfb2018/'
+  132  git add
+  133  git push
+  
+  135  git push -u origin master
+ 
+  138  ssh-keygen -t rsa -b 4096 -C "scott_friedland@urmc.rochester.edu"
+  139  ssh-add
+  140  eval "$(ssh-agent -s)"
+  141  Host *
+  142   AddKeysToAgent yes
+  143   UseKeychain yes
+  144   IdentityFile ~/.ssh/id_rsapwd
+  145  pwd
+  146  Host *
+  147   AddKeysToAgent yes
+  148   UseKeychain yes
+  149  ssh -T git@github.com
+  150  cd problemsets/
+  151  mkdir files
+ 
+  154  mv cancer_genes.fasta files
+  
+  156  cd files
+  
+  160  cd files
+  
+  162  cd problemsets/
+  163  cd files/
+ 
+  169  git add files/cancer_genes.fasta 
+  170  git commit -m 'adding cancer_genes.fasta'
+  171  git push
+  
+  173  nano mysequences.txt
+  174  ls -F
+  175  git add mysequences.txt 
+  176  git commit -m 'adding mysequences.txt' 
+  177  git push
+  178  mkdir fastas
+  
+  183  ls -a
+  184  cd .ssh/
+  
+  186  nano config
+  187  ls -l
+  188  chmod 600
+  189  chmod 600 config
+  190  ls -l
+  191  ssh-add -K ~/.ssh/id_rsa
+  192  ls -l
+  193  cat id_rsa.pub
+  
+  195  cd problemsets/
+  
+  197  nano README.md 
+  198  git add README.md 
+  199  git commit -m 'testing stuff'
+  200  git push
+  
+  202  cd fastas/
+  203  cp ~/problemsets/files/cancer_genes.fasta 
+  
+  205  cp ~/problemsets/files/cancer_genes.fasta ~/problemsets/fastas/
+  
+  209  cd file
+  210  cd files/
+ 
+  212  rm cancer_genes.fasta 
+  213  cd ..
+ 
+  215  cd fastas/
+ 
+  220  git add all *
+  221  git add *
+  222  git commit -m 'syncing everything'
+  223  git push
+
+  225  man rm
+  226  man rm
+  227  man cp
+
+  229  history
+  230  history > unixBasics.history.txt
