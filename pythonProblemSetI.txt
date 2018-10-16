@@ -1,0 +1,19 @@
+
+  250  python3
+  251  print ('Hello New York')
+  252  python3
+  253  nano myFirstPythonScript.py
+  254  chmod +x myFirstPythonScript.py 
+  255  ./ myFirstPythonScript.py Scott
+  256  ./myFirstPythonScript.py Scott
+  257  git add myFirstPythonScript.py 
+  258  git -m commit 'Saving my first script'
+  259  git commit -m 'Saving my first script'
+  260  nano myFirstPythonScript.py 
+  261  ./myFirstPythonScript.py Scott Yellow Bouldering Llama
+  262  git add myFirstPythonScript.py 
+  263  git commit -m 'Updated First Script'
+  264  git push
+  265  history
+  266  history > nano pythonProblemSetI.txt
+  267  history > pythonProblemSetI.txt
