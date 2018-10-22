@@ -51,5 +51,6 @@ print("Your new slice of DNA is:", sub_DNA, "\n...\n")
 subNumberGs = sub_DNA.count('G') + sub_DNA.count('g')
 print("Your slice of DNA has", subNumberGs, "Gs")
 
-#Reverse complementing e..g you're ugly
+#Reverse complementing e.g. you're ugly
+
 
